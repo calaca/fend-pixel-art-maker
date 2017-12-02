@@ -123,9 +123,41 @@
     <title>🎨 Pixel Art Maker 🎨</title>
 </head>
 <body>
-    <h1>
-        <img src="./img/pixel-art-maker-logo.svg" alt="Pixel Art Maker" title="Pixel Art Maker">
-    </h1>
+    <div class="container">
+        <h1>
+            <img class="logo" src="./img/pixel-art-maker-logo.svg" alt="Pixel Art Maker" title="Pixel Art Maker">
+        </h1>
+        <aside>
+            <h2>Options</h2>
+            <form>
+                <input type="number" id="input-height" name="height" min="1" placeholder="Grid height">
+                <input type="number" id="input-width" name="width" min="1" placeholder="Grid width">
+                <input class="button" type="submit" value="Submit">
+            </form>
+            <div class="color-picker">
+                <span>Line color:</span>
+                <div id="line-color-wrapper" class="color-wrapper">
+                    <input type="color" id="line-color" value="#2038b2">
+                </div>
+            </div>
+            <div class="color-picker">
+                <span>Background color:</span>
+                <div id="bg-color-wrapper" class="color-wrapper">
+                    <input type="color" id="bg-color" value="#fffff">
+                </div>
+            </div>
+        </aside>
+        <main>
+            <table id="canvas"></table>
+            <span class="size">current canvas size: <span class="value">300 x 300</span></span>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>made with<img src="./img/heart.svg" alt="Heart" title="Love">by <a href="https://calaca.github.io">calaca</a></p>
+            <a class="bg-credits" href="https://unsplash.com/photos/3ExlepthwhM">Stary Night photo by Anthony Intraversato</a>
+        </div>
+    </footer>
     <script async src="./lib/jquery-3.2.1.min.js"></script>
     <script async src="./js/app.js"></script>
 </body>

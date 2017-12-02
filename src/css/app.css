@@ -5,6 +5,7 @@
     2. Desktop
     3. Tablet
     4. Mobile
+    5. Animations
     =============================
  */
 
@@ -12,12 +13,227 @@
 
 /* 1. General */
 
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
     body {
-        font-family: 'Lato', sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: 'Lato', Arial, sans-serif;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        background-color: #95989a;
+        background-image: url('../img/background.jpg');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        overflow: hidden;
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.6);
+        transition: all 0.4s ease-in-out;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    h2 {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .logo {
+        display: inline-block;
+        height: 105px;
+    }
+
+    aside,
+    main {
+        float: left;
+    }
+
+    aside {
+        width: 25%;
+    }
+
+    main {
+        width: 75%;
+        padding: 0 20px;
+    }
+
+    aside form {
+        margin-bottom: 30px;
+    }
+
+    aside form input {
+        width: 100%;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 10px;
+        color: #95989a;
+        border: 1px solid #95989a;
+        font-size: 16px;
+        margin-bottom: 10px;
+        background-color: #fff;
+    }
+
+    aside form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #c9c9c9;
+    }
+
+    aside form input::-moz-placeholder { /* Firefox 19+ */
+        color: #c9c9c9;
+    }
+
+    aside form input:-ms-input-placeholder { /* IE 10+ */
+        color: #c9c9c9;
+    }
+    
+    aside form input:-moz-placeholder { /* Firefox 18- */
+        color: #c9c9c9;
+    }
+
+    aside form .button {
+        border: 1px solid #000;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 18px;
+        cursor: pointer;
+        width: 90px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    aside .color-picker .color-wrapper {
+        display: inline-block;
+        border-radius: 50%;
+        width: 23px;
+        height: 23px;
+    }
+    
+    input[type="color"] {
+        -webkit-appearance: none;
+        border: none;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    input[type="color"]::-webkit-color-swatch-wrapper {
+        padding: 0;
+    }
+
+    input[type="color"]::-webkit-color-swatch {
+        border: none;
+    }
+
+    main table {
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    main tr,
+    main td {
+        border: 1px solid black;
+    }
+
+    main tr {
+        height: 20px;
+    }
+
+    main td {
+        width: 20px;
+    }
+
+    main span {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 12px;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        padding: 50px 0 30px 0;
+    }
+
+    footer p {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        margin: 0;
+    }
+
+    footer p img {
+        height: 14px;
+        display: inline-block;
+        margin: 0 5px;
+        animation: heartbeat 1s infinite;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    footer .bg-credits {
+        font-size: 13px;
     }
 
 /* 2. Desktop */
 
+    @media screen and (min-width: 1180px) {
+
+        .container {
+            width: 1180px;
+            margin: 0 auto;
+        }
+
+        a:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        aside form .button:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+    }
+
 /* 3. Tablet */
 
 /* 4. Mobile */
+
+/* 5. Animations */
+
+    @keyframes heartbeat {
+
+        0% {
+            transform: scale(0.75);
+        }
+
+        20%, 60% {
+            transform: scale(1);
+        }
+
+        40%, 80%, 100% {
+            transform: scale(0.8);
+        }
+
+    }
