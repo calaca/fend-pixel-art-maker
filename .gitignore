@@ -1,0 +1,20 @@
+# OSX
+.DS_Store
+
+# Windows
+Desktop.ini
+
+# NodeJS
+node_modules/
+bower_components/
+npm-debug.log
+.grunt
+
+# Ruby
+.sass-cache/
+
+# VS Code
+.vscode
+
+# Tree
+tree.txt
