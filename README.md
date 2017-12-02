@@ -27,8 +27,7 @@
 |  ├── img
 |  ├── index.html
 |  ├── js
-|  ├── lib
-|  └── tree.txt
+|  └── lib
 └── tree.txt
 ```
 
