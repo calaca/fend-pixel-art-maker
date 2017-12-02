@@ -21,7 +21,15 @@
 |  ├── pixel-art-maker-logo.svg
 |  └── pixels.svg
 ├── LICENSE
-└── README.md
+├── README.md
+├── src
+|  ├── css
+|  ├── img
+|  ├── index.html
+|  ├── js
+|  ├── lib
+|  └── tree.txt
+└── tree.txt
 ```
 
 ## Run The Project
