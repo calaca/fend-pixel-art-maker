@@ -22,13 +22,12 @@
 |  └── pixels.svg
 ├── LICENSE
 ├── README.md
-├── src
-|  ├── css
-|  ├── img
-|  ├── index.html
-|  ├── js
-|  └── lib
-└── tree.txt
+└── src
+   ├── css
+   ├── img
+   ├── index.html
+   ├── js
+   └── lib
 ```
 
 ## Run The Project
