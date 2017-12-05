@@ -64,6 +64,7 @@
     aside,
     main {
         float: left;
+        padding: 20px 0;
     }
 
     aside {
@@ -160,15 +161,32 @@
 
     main td {
         width: 20px;
+        height: 20px;
+        transition: all 0.4s ease-in-out;
     }
 
     main .size {
         display: none;
+        margin: 5px 0;
     }
 
     main span {
         color: rgba(255, 255, 255, 0.6);
         font-size: 12px;
+    }
+
+    main #preview,
+    main #download {
+        display: none;
+        border: 1px solid #000;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 5px 10px;
+        background-color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
     }
 
     footer {
@@ -212,14 +230,24 @@
             color: rgba(255, 255, 255, 1);
         }
 
-        aside form .button:hover {
+        aside form .button:hover,
+        main #preview:hover,
+        main #download:hover {
             background-color: #000;
             color: #fff;
+        }
+
+        main td:hover {
+            background-color: rgba(0, 0, 0, 0.2);
         }
 
     }
 
 /* 3. Tablet */
+
+    .container {
+        padding: 0 40px;
+    }
 
 /* 4. Mobile */
 

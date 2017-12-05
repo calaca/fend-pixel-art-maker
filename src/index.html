@@ -135,9 +135,9 @@
                 <input class="button" type="submit" value="Submit">
             </form>
             <div class="color-picker">
-                <span>Line color:</span>
-                <div id="line-color-wrapper" class="color-wrapper">
-                    <input type="color" id="line-color" value="#2038b2">
+                <span>Square color:</span>
+                <div id="square-color-wrapper" class="color-wrapper">
+                    <input type="color" id="square-color" value="#2038b2">
                 </div>
             </div>
             <div class="color-picker">
@@ -150,6 +150,9 @@
         <main>
             <table id="canvas"></table>
             <span class="size">current canvas size: <span class="value">300 x 300</span></span>
+            <a id="preview" href="#" class="button">Preview</a>
+            <a id="download" href="#" class="button">Download</a>
+            <div class="preview"></div>
         </main>
     </div>
     <footer>
@@ -159,6 +162,7 @@
         </div>
     </footer>
     <script src="./lib/jquery-3.2.1.min.js"></script>
+    <script src="./lib/html2canvas.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
