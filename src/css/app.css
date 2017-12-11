@@ -92,19 +92,10 @@
         background-color: #fff;
     }
 
-    aside form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: #c9c9c9;
-    }
-
-    aside form input::-moz-placeholder { /* Firefox 19+ */
-        color: #c9c9c9;
-    }
-
-    aside form input:-ms-input-placeholder { /* IE 10+ */
-        color: #c9c9c9;
-    }
-    
-    aside form input:-moz-placeholder { /* Firefox 18- */
+    aside form input::-webkit-input-placeholder,
+    aside form input::-moz-placeholder,
+    aside form input:-ms-input-placeholder,
+    aside form input:-moz-placeholder {
         color: #c9c9c9;
     }
 
@@ -145,14 +136,14 @@
 
     main table {
         background-color: #fff;
-        border: 1px solid black;
+        border: 1px solid #000;
         border-collapse: collapse;
         display: none;
     }
 
     main tr,
     main td {
-        border: 1px solid black;
+        border: 1px solid #000;
     }
 
     main tr {
